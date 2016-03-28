@@ -9,41 +9,40 @@ output: html_document
 
 ## Basics
 
-### Comments
+- Comments
 
-Comments start with a `#`. Anything that comes after a `#` is ignored by R. These are used to document the code being written
+    Comments start with a `#`. Anything that comes after a `#` is ignored by R. These are used to document the code being written
+  
+    ```{r}
+    # Booga booga
+    # Namaskara
+    ```
 
-```{r}
-# Booga booga
-# Namaskara
-```
+- Integers
 
-### Integers
+    ```{r}
+    4L+2L
+    ```
 
-```{r}
-4L+2L
-```
+- Strings
 
-### Strings
+    ```{r}
+    "Hello World"
+    ```
 
-```{r}
-"Hello World"
-```
+- Floats
 
-### Floats
+    ```{r}
+    4.2
+    ```
 
-```{r}
-4.2
-```
+- Logical
 
-### Logical
-
-```{r}
-TRUE
-FALSE
-```
-
-
+    ```{r}
+    TRUE
+    FALSE
+    ```
+    
 ## Arithmatic
 
 - Additions with `+` 
