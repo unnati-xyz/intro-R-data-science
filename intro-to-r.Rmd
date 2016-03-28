@@ -434,3 +434,239 @@ distance_type.f[1] > distance_type.f[2]
 ```
 
 The real reason why factors are important will be covered in forthcoming sessions. This just introduces the concept and the necessity for it.
+
+## Data Frame
+
+The Data Frame is R's most iconic type. Soon, you'll find out that a Data Frame
+is great to express all kinds of data
+
+Think of a Data Frame as a 2 dimensional structure having rows and columns. Each column may be of a different type each row can be thought of as representing an observation
+
+To quickly get started with data frames, let us use an inbuilt data frame in R that contains some data on cars. From the help:
+
+> The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models).
+
+This data is stroed in `mtcars`. Let us look at it.
+
+```{r}
+mtcars
+```
+
+---
+
+### [ Exercise ]
+
+How will you find out what **type** `mtcars` is?
+
+```{r}
+# Answer Here
+```
+
+---
+
+As you can see, it contains data about cars, each row represents one particular car and its associated details.
+
+One of the most important things when working with Data Frames and in general with Data Science is to spend time understanding the structure of data. The structure of data, however is independent of the data itself. It is enough to get a _glimpse_ of the data to get started with. 
+
+For this sake, R exposes 2 functions - `head` and `tail` that allow us to peek at the starting / ending of the data frame
+
+```{r}
+head(mtcars)
+tail(mtcars)
+```
+
+Another way to get a quick glimpse of the data is to use the `str` function.
+
+```{r}
+str(mtcars)
+```
+
+The `str` function, as you can see shows us some nice details. It tells us
+
+- The number of observations (rows) we have (`32`)
+- The number of variables (columns) in consideration (`11`)
+- Each of the column with their data type and the first few entries
+
+
+### Creating Data Frames
+
+Let us create our own Data Frame to better understand their underlying concepts.
+
+Let's put together a bunch of vectors representing the different variables (columns) in our data frame 
+
+```{r}
+distance <- c(4.0, 5.2, 6.0, 5.2, 5.0, 6.0, 6.2, 6.0, 7.2, 7.5)
+time_taken <- c(20.5, 28.0, 40.2, 24.1, 26.0, 42.0, 43.2, 40.1, 50.2, 50.7)
+run_type <- c("S", "S", "E", "S", "S", "E", "E", "E", "E", "E") # S is speed; E is endurance
+workout_after <- c(TRUE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE)
+```
+
+Now that we have 3 vectors, we can create a data frame from these 3 vectors using the `data.frame` function
+
+```{r}
+running.df <- data.frame(distance, time_taken, run_type, workout_after)
+```
+
+Lets print this to see what we get
+
+```{r}
+running.df
+```
+
+Quite similar to the data frame we earlier saw with cars. Lets work with this!
+
+---
+
+### [ Exercise ]
+
+Use the `head`, `tail` and the `str` function to inspect the data frame we just created (`running.df`)
+
+```{r}
+# Answer here
+```
+
+---
+
+**Note:** When you run `str` on the data frame, notice that the `run_type` column has automatically been interpreted as a `Factor` type.
+
+### Selecting elements
+
+Rows and columns can be selected from the data frame by similar methods as followed in vectors. I.e. using `[` and `]`
+
+Within `[` and `]` there are 2 parts - The row part and the column part separated by a comma (`,`)
+
+Let us pick up the value in the 4th column, 2nd row
+
+```{r}
+running.df[2, 4]
+```
+
+---
+
+### [ Exercise ]
+
+1. The row and column part, much like vector element selector allows for use of the `range` operator (`:`). Select columns 1-2 for rows 5-9
+
+    ```{r}
+    # Answer here
+    ```
+
+2. R also makes it possible to omit one part of the 2 parts inside `[` and `]`. The separator is mandatory though. So now
+
+    - Select columns 1-2 for all rows 
+    
+        ```{r}
+        # Answer here
+        ```
+      
+    - Select all columns for rows 5-9
+
+        ```{r}
+        # Answer here
+        ```
+---
+
+You can also use the name of the column to select instead of specifying the numbers
+
+```{r}
+running.df[5:9, "distance"]
+```
+
+There are times where we want to operate only on one column. We have, as of now, understood that there are 2 ways to do this: 
+
+- Using the index of the distance column
+  
+    ```{r}
+    running.df[,1]
+    ```
+
+- Using the column name
+
+    ```{r}
+    running.df[,"distance"]
+    ```
+
+There's also a 3rd way which you'll see used extensively through out R and that uses the `$` operator
+
+```{r}
+running.df$distance
+```
+
+**Note:** Do note that when you are working on an **individual** column, the data structure is a `vector` and not a `data.frame`
+
+### Working with subsets
+
+Let us say that we want to select the first 4 rows of the data frame, we can do so my passing a vector like so
+
+```{r}
+running.df[c(TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE),]
+```
+
+But this is tedious so R gives us a `subset` function to do the same thing in a more readable fashion
+
+Lets pick out all the days where we did endurance runs.
+
+```{r}
+subset(running.df, subset = (run_type == "E"))
+```
+
+---
+
+### [ Exercise ]
+
+Pick out all those rows where we did endurance runs **and** worked out after the run
+
+```{r}
+# Answer here
+```
+
+---
+
+### Ordering
+
+Ordering helps us to understand our data better and helps with comparison.
+
+The `order` function helps us to do that in R. It is quite smart as well. Consider a vector
+
+```{r}
+some_alphabets <- c("h", "a", "q", "z", "n", "r")
+```
+
+Lets call order on them and see what happens
+
+```{r}
+order(some_alphabets)
+```
+
+It gives us a vector. An ordered vector. Now let us select the original vector using this one
+
+```{r}
+o <- order(some_alphabets)
+some_alphabets[o]
+```
+
+We can also sort it in the opposite order using the `decreasing=TRUE` argument to `order`
+
+---
+
+### [ Exercise ]
+
+1. Sort the `some_alphabets` vector in the descending order
+
+    ```{r}
+    # Answer here
+    ```
+    
+2. We can also get use `order` on a column in a data frame. Order the `distance` column within our `running.df` data frame
+
+    ```{r}
+    # Answer here
+    ```
+
+3. From the existing `running.df` data frame, create a new data frame (`running.df_ordered`) that is ordered by the `distance` column
+
+    ```{r}
+    # Answer here
+    ```
+
+---
