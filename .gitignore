@@ -1,1 +1,6 @@
+# IPY
 .ipynb_checkpoints/
+
+# R
+.RData  
+.Rhistory  
