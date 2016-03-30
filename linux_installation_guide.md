@@ -2,7 +2,7 @@
 
 1. Download and install miniconda (please be careful to choose the right installer which suits your system architecture) - [http://conda.pydata.org/miniconda.html](http://conda.pydata.org/miniconda.html)
 
-2. From the command prompt install r and r-essentials
+2. From the command prompt install `r-essentials` via the `r` channel
 
         conda install -c r r-essentials
 
