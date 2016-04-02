@@ -133,7 +133,7 @@
 ---
 
 ![](img/tool.jpg)
-# Python Data Stack
+# R Data Stack
 
 ---
 
@@ -234,9 +234,6 @@
 - Case 2: Kitna Deti Hain
 - Linear Regression
 
----
-
-![](img/cars.jpg)
 ## Session 6 (1135 - 1300)
 - Case 2: Continued
 
