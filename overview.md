@@ -151,8 +151,8 @@
 
 ---
 
-![](img/wine.jpg)
-# Red Wine Selection
+![](img/bank.jpg)
+# Bank Marketing 
 
 ---
 
@@ -199,18 +199,19 @@
 
 ## Session 3 (1400 - 1530)
 - Fun visualization exercise
+- Modelling the Onion data
 - Communicating the Onion Insights
-- Acquiring the Onion data (Web Scraping)
 
 ---
 
 ![](img/onion.jpg)
 ## Session 4 (1550 - 1730)
-- Scraping the Onion data
+- Acquiring the Onion data (Web Scraping)
 - Refining the Onion Data
 
 ## Optional Advanced Session (1730 - 1830)
-- Working with SQL to Acquire and Refine Hard Disk Data
+- Working with SQL to Acquire and Refine Data
+- Real life Scraping
 - Office Hours
 
 ---
@@ -225,7 +226,7 @@
 
 ---
 
-![](img/wine.jpg)
+![](img/cars.jpg)
 
 ## Session 5 (0930 - 1115)
 - Reflections
@@ -235,21 +236,21 @@
 
 ---
 
-![](img/wine.jpg)
+![](img/cars.jpg)
 ## Session 6 (1135 - 1300)
 - Case 2: Continued
 
 ---
 
-![](img/kaggle_short.png)
+![](img/bank.jpg)
 ## Session 7 (1400 - 1530)
 - Fun Demo : Music Visualization
-- Case 5: Selecting a Red Wine
+- Case 5: Bank Marketing
 - Decision Trees for Classification
 - Logistics Regression for Classification
 
 ## Session 8 (1550 - 1730)
-- Wine Case  Competition (contd.)
+- Bank Marketing (contd.)
 - Recap and Way Forward
 - Feedback
 
@@ -343,7 +344,7 @@
 ---
 
 # R Stack
-- **Acquire / Refine**: `Dplyr`
+- **Acquire / Refine**: `dplyr`
 - **Explore**: `ggplot2, ggvis`
 - **Model**: `stats, caret`
 - **Insight**: `Rserve, Shiny`
@@ -362,21 +363,19 @@
 # Books
 
 ![fit](img/book.png)
-![fit](img/wesmckinney.jpg)
-![fit](img/thinkstats.jpg)
+![fit](img/ISLR.jpeg)
 
 
 ---
 
 ![fit](img/book.png)
-![fit](img/wesmckinney.jpg)
-![fit](img/thinkstats.jpg)
+![fit](img/ISLR.jpeg)
 
 ---
 ![](img/stars.jpg)
 # Online Course
-- Harvard Data Science Course - [CS 109 Course](http://cs109.github.io/2015/)
-- Structured in similar way to the approach we shared
+- Data Science Specialisation - [JHU Data Science](https://www.coursera.org/specializations/jhu-data-science) It is a good course, and the code is in R
+- Harvard Data Science Course - [CS 109 Course](http://cs109.github.io/2015/) - Structured in similar way to the approach we shared
 <br>
 - Many more on Coursera & Udacity...
 
