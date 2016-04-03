@@ -1,16 +1,3 @@
-# Connectivity
-
-SSID: `Axilor-SF`
-Password: `C1B68CD7BE`
-
----
-
-# Day 1 Feedback
-
-http://small.cat/pen
-
----
-
 ![](img/workshop.jpg)
 # Intro to Data Science in R
 ### @unnati_xyz | @hasgeek | @AxilorVentures
@@ -229,13 +216,8 @@ http://small.cat/pen
 
 ---
 
-![](img/break.jpg)
-## Food and Hydration
-<br>
-### 0830 - 0930: Breakfast
-### 1115 - 1135: Tea Break
-### 1300 - 1400: Lunch
-### 1530 - 1550: Tea Break
+![](img/welcome.jpg)
+# Welcome Back
 
 ---
 
@@ -257,12 +239,22 @@ http://small.cat/pen
 - Fun Demo : Music Visualization
 - Case 5: Bank Marketing
 - Decision Trees for Classification
-- Logistics Regression for Classification
+- Logistic Regression for Classification
 
 ## Session 8 (1550 - 1730)
 - Bank Marketing (contd.)
 - Recap and Way Forward
 - Feedback
+
+---
+
+![](img/break.jpg)
+## Food and Hydration
+<br>
+### 0830 - 0930: Breakfast
+### 1115 - 1135: Tea Break
+### 1300 - 1400: Lunch
+### 1530 - 1550: Tea Break
 
 ---
 
@@ -321,7 +313,7 @@ http://small.cat/pen
 ![](img/model.jpg)
 # Model - Supervised Learning
 - *Continuous*: Regression - **Linear**, Polynomial, Tree Based Methods - CART, Random Forest, Gradient Boosting Machines
-- *Classification* - **Logistics Regression**, Tree, KNN, SVM, Naive-Bayes. Bayesian Network
+- *Classification* - **Logistic Regression**, Tree, KNN, SVM, Naive-Bayes. Bayesian Network
 
 ---
 
@@ -354,10 +346,11 @@ http://small.cat/pen
 ---
 
 # R Stack
-- **Acquire / Refine**: `dplyr`
-- **Explore**: `ggplot2, ggvis`
-- **Model**: `stats, caret`
-- **Insight**: `Rserve, Shiny`
+- **Acquire**: `rvest, XML, jsonlite, httr, RSQLite, RPostgreSQL, readxl, haven, readr, data.table` 
+- **Refine**: `dplyr, tidyr, lubridate, stringr`
+- **Explore**: `graphics, ggplot2, ggvis, ggmap, map, vcd, rgl, htmlwidgets, leaflet, choroplethr, plotly`
+- **Model**: `stats, caret, ranger, glmnet, xgboost, party, mxnet, forecast`
+- **Insight**: `OpenCPU, Rserve, shiny, RMarkdown, knitr`
 
 ---
 
@@ -370,31 +363,39 @@ http://small.cat/pen
 
 ---
 
-# Books
+# Resources
+## Books and Videos
 
-![fit](img/book.png)
-![fit](img/ISLR.jpeg)
+---
+
+![left](img/datascienceinR.png)
+# R for Data Science
+A good introduction to the process of data science and its application in R. Written by creators of `dplyr` and `ggplot2` library.
+
+[http://r4ds.had.co.nz/](http://r4ds.had.co.nz/)
+
+---
+
+![left](img/ISLR.jpeg)
+# Introduction to Statistical Learning
+A very good introduction book with both the math around all learning models as well as code in R to implement it.
+
+[http://www-bcf.usc.edu/~gareth/ISL/index.html](http://www-bcf.usc.edu/~gareth/ISL/index.html)
 
 
 ---
 
-![fit](img/book.png)
-![fit](img/ISLR.jpeg)
-
----
 ![](img/stars.jpg)
-# Online Course
-- Data Science Specialisation - [JHU Data Science](https://www.coursera.org/specializations/jhu-data-science) It is a good course, and the code is in R
-- Harvard Data Science Course - [CS 109 Course](http://cs109.github.io/2015/) - Structured in similar way to the approach we shared
-<br>
-- Many more on Coursera & Udacity...
+# Online Courses
+- **[Data Analysis with R - Udacity](https://www.udacity.com/course/data-analysis-with-r--ud651)**: An introductory course on doing Exploratory Data Analysis in R
 
+- **[Data Science Specialisation - Coursera](https://www.coursera.org/specializations/jhu-data-science)** by John Hopkins University: A comprehensive set of courses on the process of data science designed in R. You can get all the slides and code from - [https://github.com/DataScienceSpecialization/courses](https://github.com/DataScienceSpecialization/courses)
 
 
 ---
 ![](img/workshop.jpg)
 # Upcoming Workshops
-- Advanced Data Science (Machine Learning, Statistics)
+- Advanced Data Science (Machine Learning, Statistics) - *Coming up in June 2016*
 - Data Science at Scale (Spark)
 - Visualisation (Multi-Dimensional, Geographic, Large Data)
 - Deep Learning (Text, Speech, Image, Video)
@@ -410,7 +411,8 @@ http://small.cat/pen
 
 ![](img/numbers.jpg)
 # Thank you
-### [unnati.xyz/workshop-feedback](http://unnati.xyz/workshop-feedback)
+## [unnati.xyz/workshop-feedback](http://unnati.xyz/workshop-feedback)
+### Follow us on [@unnati_xyz](http://twitter.com/unnati_xyz)
 
 ---
 
