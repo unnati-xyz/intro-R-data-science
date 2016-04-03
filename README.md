@@ -6,12 +6,12 @@ This is a repository for the data science workshop in R conducted by Unnati | Ha
 - Installation - To get yourself ready for the workshop.
   - [Installation for Windows](installation_guide_windows.md)
   - [Installation for OSX](installation_guide_osx.md)
-  - [Installation for Linux ](installation_guide_linux.md))
+  - [Installation for Linux ](installation_guide_linux.md)
 - [Schedule](schedule.md) - The broad schedule for the workshop
 - [Introduction](introduction.md) - The overall introduction to the workshop.
 - [Overview](overview.md) - The overview presentation for the workshop. ([Overview Slides](/overview-slides.pdf))
 - [Intro to Data Structures in R](intro/intro-to-r.ipynb) - Get started with R.
-- [Intro to Visualisation in R](intro/intro_viz.ipynb) - Getting started with Visualisation in R.
+- [Intro to Visualisation in R](intro/intro_viz.ipynb) - Get started with visualisation in R.
 
 Case Studies
 - [Case #1 - Peeling the Onion](/onion) - Price & Quantity of Onion across in India.
@@ -21,7 +21,7 @@ Case Studies
     - [Explore the Data](/onion/4-Explore.ipynb)
     - [Model the Solution](/onion/5-Model.ipynb)
     - [Insight Communication](/onion/6-Insight.ipynb)
-- [Case #2 - Cars: Kitna Deti Hain](/cars) - Price and Mileage for Cars in India
+- [Case #2 - Cars: Kitna Deti Hain](/cars) - Price & Mileage for Cars in India
     - [Frame the Problem](/cars/Frame.ipynb)
     - [Acquire the Data](/cars/Acquire.ipynb)
     - [Refine the Data](/cars/Refine.ipynb)

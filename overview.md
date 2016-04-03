@@ -1,6 +1,6 @@
 ![](img/workshop.jpg)
 # Intro to Data Science in R
-### @unnati_xyz | @hasgeek | @AxilorVentures
+### @unnati_xyz | @hasgeek
 
 ---
 
@@ -121,7 +121,7 @@
 
 ---
 
-![](img/approach.jpg)
+![fit](img/approach.jpg)
 
 
 ---
@@ -267,7 +267,7 @@
 
 ---
 
-![](img/approach.jpg)
+![fit](img/approach.jpg)
 
 ---
 
@@ -412,7 +412,15 @@ A very good introduction book with both the math around all learning models as w
 ![](img/numbers.jpg)
 # Thank you
 ## [unnati.xyz/workshop-feedback](http://unnati.xyz/workshop-feedback)
-### Follow us on [@unnati_xyz](http://twitter.com/unnati_xyz)
+
+---
+
+![](img/welcome.jpg)
+# Follow and Contact us
+- Twitter: [http://twitter.com/unnati_xyz](http://twitter.com/unnati_xyz)
+- Facebook: [https://www.facebook.com/unnati.xyz](https://www.facebook.com/unnati.xyz)
+- Github: [https://github.com/unnati-xyz](https://github.com/unnati-xyz)
+- Email: [enquiry@unnati.xyz](mailto:enquiry@unnati.xyz?subject=Data%20Science%20Enquiry)
 
 ---
 
