@@ -1,6 +1,19 @@
+# Connectivity
+
+SSID: `Axilor-SF`
+Password: `C1B68CD7BE`
+
+---
+
+# Day 1 Feedback
+
+http://small.cat/pen
+
+---
+
 ![](img/workshop.jpg)
 # Intro to Data Science in R
-### @unnati_xyz | @hasgeek
+### @unnati_xyz | @hasgeek | @AxilorVentures
 
 ---
 
