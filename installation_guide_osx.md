@@ -16,9 +16,9 @@
 
         conda install jupyter
 
-        OR 
+    OR 
 
-        in case you want to use python pip 
+    in case you want to use python pip 
 
         pip install jupyter
 
