@@ -4,7 +4,7 @@
 
 2. Install r 
  
-        brew install r
+        brew cask install r
 
 3. Install zeromq 
  
@@ -16,11 +16,17 @@
 
         conda install jupyter
 
+    OR 
+
+    in case you want to use python pip 
+
+        pip install jupyter
+
 6. From command prompt run `R`
 
 7. In the R shell that has opened run the command
 
-        install.packages(c('rzmq','repr','IRkernel','IRdisplay'),repos = c('http://irkernel.github.io/', getOption('repos')))
+        install.packages(c('rzmq','repr','IRkernel','IRdisplay'),repos = c('http://irkernel.github.io/', getOption('repos')), type='source')
 
 8. On successful completion of the previous command, in the R shell itself, make `IRKernel` available to jupyter by running the following command
 
